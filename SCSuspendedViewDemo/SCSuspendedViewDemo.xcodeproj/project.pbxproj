@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B89508A81FDEBA5F0004C1CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B89508A71FDEBA5F0004C1CC /* AppDelegate.m */; };
+		B89508AB1FDEBA5F0004C1CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B89508AA1FDEBA5F0004C1CC /* ViewController.m */; };
+		B89508AE1FDEBA5F0004C1CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89508AC1FDEBA5F0004C1CC /* Main.storyboard */; };
+		B89508B01FDEBA5F0004C1CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B89508AF1FDEBA5F0004C1CC /* Assets.xcassets */; };
+		B89508B31FDEBA5F0004C1CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89508B11FDEBA5F0004C1CC /* LaunchScreen.storyboard */; };
+		B89508B61FDEBA5F0004C1CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B89508B51FDEBA5F0004C1CC /* main.m */; };
+		B89508BE1FDEBAD60004C1CC /* SCSuspendedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B89508BC1FDEBAD60004C1CC /* SCSuspendedViewController.m */; };
+		B89508E21FDEBBD20004C1CC /* SCSuspendedViewPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B89508D61FDEBBD20004C1CC /* SCSuspendedViewPresentationController.m */; };
+		B89508E31FDEBBD20004C1CC /* SCSuspendedViewInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B89508D71FDEBBD20004C1CC /* SCSuspendedViewInteractionController.m */; };
+		B89508E41FDEBBD20004C1CC /* SCSuspendedViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B89508DE1FDEBBD20004C1CC /* SCSuspendedViewConfiguration.m */; };
+		B89508E51FDEBBD20004C1CC /* SCSuspendedViewTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B89508DF1FDEBBD20004C1CC /* SCSuspendedViewTransitionDelegate.m */; };
+		B89508E61FDEBBD20004C1CC /* UIViewController+SCSuspendedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B89508E01FDEBBD20004C1CC /* UIViewController+SCSuspendedView.m */; };
+		B89508E71FDEBBD20004C1CC /* SCSuspendedViewAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B89508E11FDEBBD20004C1CC /* SCSuspendedViewAnimationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B89508A31FDEBA5E0004C1CC /* SCSuspendedViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCSuspendedViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89508A61FDEBA5F0004C1CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B89508A71FDEBA5F0004C1CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B89508A91FDEBA5F0004C1CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B89508AA1FDEBA5F0004C1CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B89508AD1FDEBA5F0004C1CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B89508AF1FDEBA5F0004C1CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B89508B21FDEBA5F0004C1CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B89508B41FDEBA5F0004C1CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B89508B51FDEBA5F0004C1CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B89508BC1FDEBAD60004C1CC /* SCSuspendedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSuspendedViewController.m; sourceTree = "<group>"; };
+		B89508BD1FDEBAD60004C1CC /* SCSuspendedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSuspendedViewController.h; sourceTree = "<group>"; };
+		B89508D61FDEBBD20004C1CC /* SCSuspendedViewPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSuspendedViewPresentationController.m; sourceTree = "<group>"; };
+		B89508D71FDEBBD20004C1CC /* SCSuspendedViewInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSuspendedViewInteractionController.m; sourceTree = "<group>"; };
+		B89508D81FDEBBD20004C1CC /* UIViewController+SCSuspendedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SCSuspendedView.h"; sourceTree = "<group>"; };
+		B89508D91FDEBBD20004C1CC /* SCSuspendedViewTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSuspendedViewTransitionDelegate.h; sourceTree = "<group>"; };
+		B89508DA1FDEBBD20004C1CC /* SCSuspendedViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSuspendedViewConfiguration.h; sourceTree = "<group>"; };
+		B89508DB1FDEBBD20004C1CC /* SCSuspendedViewAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSuspendedViewAnimationController.h; sourceTree = "<group>"; };
+		B89508DC1FDEBBD20004C1CC /* SCSuspendedViewPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSuspendedViewPresentationController.h; sourceTree = "<group>"; };
+		B89508DD1FDEBBD20004C1CC /* SCSuspendedViewInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSuspendedViewInteractionController.h; sourceTree = "<group>"; };
+		B89508DE1FDEBBD20004C1CC /* SCSuspendedViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSuspendedViewConfiguration.m; sourceTree = "<group>"; };
+		B89508DF1FDEBBD20004C1CC /* SCSuspendedViewTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSuspendedViewTransitionDelegate.m; sourceTree = "<group>"; };
+		B89508E01FDEBBD20004C1CC /* UIViewController+SCSuspendedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SCSuspendedView.m"; sourceTree = "<group>"; };
+		B89508E11FDEBBD20004C1CC /* SCSuspendedViewAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSuspendedViewAnimationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B89508A01FDEBA5E0004C1CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B895089A1FDEBA5E0004C1CC = {
+			isa = PBXGroup;
+			children = (
+				B89508D51FDEBBD20004C1CC /* SCSuspendedView */,
+				B89508A51FDEBA5E0004C1CC /* SCSuspendedViewDemo */,
+				B89508A41FDEBA5E0004C1CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B89508A41FDEBA5E0004C1CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B89508A31FDEBA5E0004C1CC /* SCSuspendedViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B89508A51FDEBA5E0004C1CC /* SCSuspendedViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B89508A61FDEBA5F0004C1CC /* AppDelegate.h */,
+				B89508A71FDEBA5F0004C1CC /* AppDelegate.m */,
+				B89508A91FDEBA5F0004C1CC /* ViewController.h */,
+				B89508AA1FDEBA5F0004C1CC /* ViewController.m */,
+				B89508BD1FDEBAD60004C1CC /* SCSuspendedViewController.h */,
+				B89508BC1FDEBAD60004C1CC /* SCSuspendedViewController.m */,
+				B89508AC1FDEBA5F0004C1CC /* Main.storyboard */,
+				B89508AF1FDEBA5F0004C1CC /* Assets.xcassets */,
+				B89508B11FDEBA5F0004C1CC /* LaunchScreen.storyboard */,
+				B89508B41FDEBA5F0004C1CC /* Info.plist */,
+				B89508B51FDEBA5F0004C1CC /* main.m */,
+			);
+			path = SCSuspendedViewDemo;
+			sourceTree = "<group>";
+		};
+		B89508D51FDEBBD20004C1CC /* SCSuspendedView */ = {
+			isa = PBXGroup;
+			children = (
+				B89508DB1FDEBBD20004C1CC /* SCSuspendedViewAnimationController.h */,
+				B89508E11FDEBBD20004C1CC /* SCSuspendedViewAnimationController.m */,
+				B89508DD1FDEBBD20004C1CC /* SCSuspendedViewInteractionController.h */,
+				B89508D71FDEBBD20004C1CC /* SCSuspendedViewInteractionController.m */,
+				B89508DC1FDEBBD20004C1CC /* SCSuspendedViewPresentationController.h */,
+				B89508D61FDEBBD20004C1CC /* SCSuspendedViewPresentationController.m */,
+				B89508D91FDEBBD20004C1CC /* SCSuspendedViewTransitionDelegate.h */,
+				B89508DF1FDEBBD20004C1CC /* SCSuspendedViewTransitionDelegate.m */,
+				B89508D81FDEBBD20004C1CC /* UIViewController+SCSuspendedView.h */,
+				B89508E01FDEBBD20004C1CC /* UIViewController+SCSuspendedView.m */,
+				B89508DA1FDEBBD20004C1CC /* SCSuspendedViewConfiguration.h */,
+				B89508DE1FDEBBD20004C1CC /* SCSuspendedViewConfiguration.m */,
+			);
+			name = SCSuspendedView;
+			path = ../SCSuspendedView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B89508A21FDEBA5E0004C1CC /* SCSuspendedViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B89508B91FDEBA5F0004C1CC /* Build configuration list for PBXNativeTarget "SCSuspendedViewDemo" */;
+			buildPhases = (
+				B895089F1FDEBA5E0004C1CC /* Sources */,
+				B89508A01FDEBA5E0004C1CC /* Frameworks */,
+				B89508A11FDEBA5E0004C1CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCSuspendedViewDemo;
+			productName = SCSuspendedViewDemo;
+			productReference = B89508A31FDEBA5E0004C1CC /* SCSuspendedViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B895089B1FDEBA5E0004C1CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = SC;
+				TargetAttributes = {
+					B89508A21FDEBA5E0004C1CC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B895089E1FDEBA5E0004C1CC /* Build configuration list for PBXProject "SCSuspendedViewDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B895089A1FDEBA5E0004C1CC;
+			productRefGroup = B89508A41FDEBA5E0004C1CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B89508A21FDEBA5E0004C1CC /* SCSuspendedViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B89508A11FDEBA5E0004C1CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89508B31FDEBA5F0004C1CC /* LaunchScreen.storyboard in Resources */,
+				B89508B01FDEBA5F0004C1CC /* Assets.xcassets in Resources */,
+				B89508AE1FDEBA5F0004C1CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B895089F1FDEBA5E0004C1CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89508E51FDEBBD20004C1CC /* SCSuspendedViewTransitionDelegate.m in Sources */,
+				B89508E71FDEBBD20004C1CC /* SCSuspendedViewAnimationController.m in Sources */,
+				B89508AB1FDEBA5F0004C1CC /* ViewController.m in Sources */,
+				B89508B61FDEBA5F0004C1CC /* main.m in Sources */,
+				B89508E61FDEBBD20004C1CC /* UIViewController+SCSuspendedView.m in Sources */,
+				B89508BE1FDEBAD60004C1CC /* SCSuspendedViewController.m in Sources */,
+				B89508A81FDEBA5F0004C1CC /* AppDelegate.m in Sources */,
+				B89508E41FDEBBD20004C1CC /* SCSuspendedViewConfiguration.m in Sources */,
+				B89508E21FDEBBD20004C1CC /* SCSuspendedViewPresentationController.m in Sources */,
+				B89508E31FDEBBD20004C1CC /* SCSuspendedViewInteractionController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B89508AC1FDEBA5F0004C1CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B89508AD1FDEBA5F0004C1CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B89508B11FDEBA5F0004C1CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B89508B21FDEBA5F0004C1CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B89508B71FDEBA5F0004C1CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B89508B81FDEBA5F0004C1CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B89508BA1FDEBA5F0004C1CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J3Z9KKCQS;
+				INFOPLIST_FILE = SCSuspendedViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SC.SCSuspendedViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B89508BB1FDEBA5F0004C1CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J3Z9KKCQS;
+				INFOPLIST_FILE = SCSuspendedViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SC.SCSuspendedViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B895089E1FDEBA5E0004C1CC /* Build configuration list for PBXProject "SCSuspendedViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B89508B71FDEBA5F0004C1CC /* Debug */,
+				B89508B81FDEBA5F0004C1CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B89508B91FDEBA5F0004C1CC /* Build configuration list for PBXNativeTarget "SCSuspendedViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B89508BA1FDEBA5F0004C1CC /* Debug */,
+				B89508BB1FDEBA5F0004C1CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B895089B1FDEBA5E0004C1CC /* Project object */;
+}
