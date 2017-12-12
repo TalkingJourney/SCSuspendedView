@@ -18,6 +18,11 @@
     [self.view addSubview:self.tableView];
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 10;
@@ -80,46 +85,47 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    CGSize screenSize = UIScreen.mainScreen.bounds.size;
     SCSuspendedViewConfiguration *configuration;
     switch (indexPath.row) {
         case 0:
-            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionLeft transparent:YES backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(0, 100, 100, 200) transitionDuration:0.25];
+            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionLeft transparent:YES hasGestureRecognizer:NO backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(0, 0, 100, screenSize.height) transitionDuration:0.25];
             break;
             
         case 1:
-            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionLeft transparent:NO backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(0, 100, 100, 200) transitionDuration:0.25];
+            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionLeft transparent:NO hasGestureRecognizer:YES backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(0, 0, 100, screenSize.height) transitionDuration:0.25];
             break;
             
         case 2:
-            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionRight transparent:YES backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(UIScreen.mainScreen.bounds.size.width - 105, 100, 100, 200) transitionDuration:0.25];
+            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionRight transparent:YES hasGestureRecognizer:YES backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(screenSize.width - 205, 100, 200, screenSize.height - 200) transitionDuration:0.25];
             break;
             
         case 3:
-            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionRight transparent:NO backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(UIScreen.mainScreen.bounds.size.width - 105, 100, 100, 200) transitionDuration:0.25];
+            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionRight transparent:NO hasGestureRecognizer:YES backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(screenSize.width - 205, 100, 200, screenSize.height - 200) transitionDuration:0.25];
             break;
             
         case 4:
-            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionTop transparent:YES backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(100, 0, 100, 200) transitionDuration:0.25];
+            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionTop transparent:YES hasGestureRecognizer:NO backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(0, 0, screenSize.width, 100) transitionDuration:0.25];
             break;
             
         case 5:
-            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionTop transparent:NO backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(100, 0, 100, 200) transitionDuration:0.25];
+            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionTop transparent:NO hasGestureRecognizer:YES backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(0, 0, screenSize.width, 100) transitionDuration:0.25];
             break;
             
         case 6:
-            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionBottom transparent:YES backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(0, UIScreen.mainScreen.bounds.size.height - 400, UIScreen.mainScreen.bounds.size.width, 400) transitionDuration:0.25];
+            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionBottom transparent:YES hasGestureRecognizer:YES backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(5, screenSize.height - 395, screenSize.width - 10, 400) transitionDuration:0.25];
             break;
             
         case 7:
-            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionBottom transparent:NO backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(0, UIScreen.mainScreen.bounds.size.height - 400, UIScreen.mainScreen.bounds.size.width, 400) transitionDuration:0.25];
+            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionBottom transparent:NO hasGestureRecognizer:YES backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(5, screenSize.height - 395, screenSize.width - 10, 400) transitionDuration:0.25];
             break;
             
         case 8:
-            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionCenter transparent:YES backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(150, 200, 100, 200) transitionDuration:0.25];
+            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionCenter transparent:YES hasGestureRecognizer:YES backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(15, screenSize.height / 2 - 150, screenSize.width - 30, 300) transitionDuration:0.25];
             break;
             
         case 9:
-            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionCenter transparent:NO backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(150, 200, 100, 200) transitionDuration:0.25];
+            configuration = [SCSuspendedViewConfiguration configurationWithDirection:SCSuspendedViewDirectionCenter transparent:NO hasGestureRecognizer:YES backgroundMaskColor:[UIColor colorWithWhite:0x000000 alpha:0.3] suspendedViewFrameInWindow:CGRectMake(15, screenSize.height / 2 - 150, screenSize.width - 30, 300) transitionDuration:0.25];
             break;
             
         default:

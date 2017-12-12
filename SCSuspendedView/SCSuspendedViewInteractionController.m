@@ -13,8 +13,9 @@
 
 - (void)wireToViewController:(UIViewController *)viewController
 {
-    self.presentedViewController = viewController;
-    SCSuspendedViewConfiguration *configuration = self.presentedViewController.sc_suspendedViewConfiguration;
+    _presentedViewController = viewController;
+    
+    SCSuspendedViewConfiguration *configuration = viewController.sc_suspendedViewConfiguration;
     if (!configuration) return;
     
     switch (configuration.direction) {
@@ -40,7 +41,7 @@
 
 - (void)handlePanGestureRecognizer:(UIPanGestureRecognizer *)gestureRecognizer {
     SCSuspendedViewConfiguration *configuration = self.presentedViewController.sc_suspendedViewConfiguration;
-    if (!configuration) return;
+    if (!configuration || !configuration.hasGestureRecognizer) return;
     
     CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view.superview];
     switch (gestureRecognizer.state) {
@@ -109,7 +110,7 @@
 - (void)handleTapGestureRecognizer:(UITapGestureRecognizer *)tapGestureRecognizer
 {
     SCSuspendedViewConfiguration *configuration = self.presentedViewController.sc_suspendedViewConfiguration;
-    if (!configuration) return;
+    if (!configuration || !configuration.hasGestureRecognizer) return;
     if (configuration.direction != SCSuspendedViewDirectionCenter) return;
     
     [self.presentedViewController.presentingViewController dismissViewControllerAnimated:YES completion:nil];

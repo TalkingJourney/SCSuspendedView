@@ -11,6 +11,7 @@
 {
     return [self configurationWithDirection:SCSuspendedViewDirectionCenter
                                 transparent:NO
+                       hasGestureRecognizer:YES
                         backgroundMaskColor:SCSuspendedViewDefaultBackgroundMaskColor
                  suspendedViewFrameInWindow:SCSuspendedViewDefaultRect
                          transitionDuration:SCSuspendedViewDefaultTransitionDuration];
@@ -18,6 +19,7 @@
 
 + (instancetype)configurationWithDirection:(SCSuspendedViewDirection)direction
                                transparent:(BOOL)transparent
+                      hasGestureRecognizer:(BOOL)hasGestureRecognizer
                        backgroundMaskColor:(UIColor *)backgroundMaskColor
                 suspendedViewFrameInWindow:(CGRect)suspendedViewFrameInWindow
                         transitionDuration:(NSTimeInterval)transitionDuration
@@ -27,6 +29,7 @@
     
     configuration.direction = direction;
     configuration.transparent = transparent;
+    configuration.hasGestureRecognizer = hasGestureRecognizer;
     configuration.backgroundMaskColor = backgroundMaskColor ?: SCSuspendedViewDefaultBackgroundMaskColor;
     configuration.suspendedViewFrameInWindow = suspendedViewFrameInWindow;
     configuration.transitionDuration = transitionDuration > 0 ? transitionDuration : SCSuspendedViewDefaultTransitionDuration;

@@ -3,6 +3,7 @@
 #import "SCSuspendedViewAnimationController.h"
 #import "SCSuspendedViewPresentationController.h"
 #import "SCSuspendedViewInteractionController.h"
+#import "UIViewController+SCSuspendedView.h"
 
 @interface SCSuspendedViewTransitionDelegate ()
 
@@ -12,17 +13,16 @@
 
 @implementation SCSuspendedViewTransitionDelegate
 
-- (void)dealloc
-{
-    
-}
-
 #pragma mark - UIViewControllerAnimatedTransitioning
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
     SCSuspendedViewAnimationController *animationController = [SCSuspendedViewAnimationController new];
-    [self.interactionController wireToViewController:presented];
+    SCSuspendedViewConfiguration *configuration = presented.sc_suspendedViewConfiguration;
+    if (configuration && configuration.hasGestureRecognizer) {
+        self.interactionController = [SCSuspendedViewInteractionController new];
+        [self.interactionController wireToViewController:presented];
+    }
     return animationController;
 }
 
@@ -45,16 +45,6 @@
 - (id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator
 {
     return self.interactionController.interacting ? self.interactionController : nil;
-}
-
-#pragma mark - Getter and Setter
-
-- (SCSuspendedViewInteractionController *)interactionController
-{
-    if (!_interactionController) {
-        _interactionController = [SCSuspendedViewInteractionController new];
-    }
-    return _interactionController;
 }
 
 @end
