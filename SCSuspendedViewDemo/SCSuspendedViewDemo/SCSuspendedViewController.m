@@ -18,4 +18,10 @@
     self.view.backgroundColor = [UIColor redColor];
 }
 
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    BOOL yesOrNo = self.sc_suspendedViewConfiguration.hasGestureRecognizer;
+    self.sc_suspendedViewConfiguration.hasGestureRecognizer = !yesOrNo;
+}
+
 @end
