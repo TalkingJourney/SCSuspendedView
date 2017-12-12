@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SCSuspendedView"
-  s.version      = "1.0.0"
+  s.version      = "1.1"
   s.summary      = "SCSuspendedView provide a suspended view with transition animation."
   s.description  = "SCSuspendedView provide a suspended view with transition animation. It is a easy way to show a suspended view and transition animation."
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/TalkingJourney/SCSuspendedView.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/TalkingJourney/SCSuspendedView.git", :tag => "1.1" }
 
   s.source_files = "SCSuspendedView/**/*.{h,m}"
   s.public_header_files = "SCSuspendedView/**/*.h"
