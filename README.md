@@ -12,8 +12,8 @@ SCSuspendedView provide a suspended view with transition animation.
 3. 浮层可以选择是否遮挡层级下面的ViewController。
 
 # 使用方法（可参考demo）
-1.必须在你要设置的VC的初始化方法里调用sc_makeSuspendedView方法；
-2.必须在viewDidLoad之前，设置浮层配置信息sc_suspendedViewConfiguration属性。
+1. 必须在你要设置的VC的初始化方法里调用sc_makeSuspendedView方法；
+2. 必须在viewDidLoad之前，设置浮层配置信息sc_suspendedViewConfiguration属性。
 
 # 结束
 [SCSuspendedView](https://github.com/TalkingJourney/SCSuspendedView)使用接口简单方便，可以通过Pod导入到项目中。对于这个小控件有什么建议或者意见的话，可以向我反馈，喜欢的话，也可以通过star来鼓励下我，谢谢大家捧场。
